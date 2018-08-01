@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>闭包和作用域</title>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+<script>
+    //声明
+    //var a = 123;
+    //var a = "a";
+
+    // console.log(a);
+    // var a=0;
+    //
+    // console.log(a);
+    // var a = 10;
+    // console.log(a);
+
+    // function a() {
+    //     console.log("abc");
+    // var b = 1;
+    // }
+    // console.log(b);
+    // a="123";
+    // a();
+    //
+    // for (var i=0;i<5;i++){
+    //
+    // }
+    // console.log(i)
+
+    // var aLi = document.querySelectorAll("ul li");
+    // for (var i = 0;i<aLi.length;i++){
+    //     aLi[i]=this.index;
+    //     aLi[i].onclick = function () {
+    //         console.log(aLi[i]);
+    //     }
+    // }
+
+    // for (var i = 0;i<aLi.length;i++){
+    //     (function (key) {
+    //         aLi[i].onclick = function () {
+    //             console.log(key);
+    //         }
+    //     })(i)
+    // }
+    // // 立即执行函数
+    // var abc =
+    //     function () {
+    //         console.log(2);
+    //     }
+    //     abc();
+    // // 2
+    // (function () {
+    //     console.log(2);
+    // })()
+
+    // function a() {
+    //     b = 10; //全局变量
+    //     var b= 10; //局部变量
+    // }
+    // console.log(b);
+
+    // function f1() {
+    //     var a=999;
+    //     function f2() {
+    //         console.log(a);
+    //     }
+    //     return f2;
+    // }
+    // var result = f1();
+    // result();
+
+    // let
+    // let a = 10;
+    // let a = "1";
+    // console.log(a);
+    //
+    // console.log(a);
+    // let a = 10;
+    //
+    // function a(){
+    //     //这里--暂时性死区
+    //     console.log(a);
+    //     let a =10;
+    //
+    // }
+    // console.log(a);
+    // // let a =10;
+    // a();
+
+    //
+    // let aLi = document.querySelectorAll("ul li")
+    // for(let i=0;i<aLi.length;i++){
+    //     aLi[i].onclick = function () {
+    //         console.log(i);
+    //     }
+    // }
+    //
+    // if(true){
+    //     let a = 19;
+    // }
+    // console.log(a);
+
+    //常量不可变
+    // const a = "123";
+    // a = "aaa";
+    // console.log(a);
+
+    //用对象来改常量(改变的是内存中的值)
+    const obj = {
+        name:"aaa",
+    }
+    obj.name = "bbb";
+    console.log(obj.name);
+</script>
+</body>
+</html>

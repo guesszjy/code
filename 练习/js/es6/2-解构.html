@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+//     var arr = ["a","b","c"];
+//     var a = arr[0];
+//     var b = arr[1];
+//     var b = arr[2];
+//     var [a,b,c] = ["1","2","3"];
+//     console.log(a,b,c);
+//
+//     var obj = {
+//         name:"xiaoming";
+//         age:"20";
+//     }
+//     var  name = obj.name;
+//     var age = obj.age;
+// //对象结构
+//     var{age:a,name:b} ={name:"xiaoming",age:"20"};
+//     console.log(a,b);
+//
+//     var{age,name} ={name:"xiaoming",age:"20"};
+//     console.log(age,name);
+// //字符串结构
+// var str = "hello";
+// console.log(str.charAt(0));
+// console.log(str[0]);
+//
+// var [a,b,c,d,e] = "hello";
+// console(a,b,c,d,e);
+//字符串和数组
+// function foo() {
+//     console.log(arguments[0]);
+//     console.log(arguments);
+// }
+// foo("a","b","c");
+
+
+
+
+
+
+    function foo(a,b,c) {
+        console.log(a,b,c);
+    }
+    var arr = ["1","2","3"];
+    foo(arr);
+
+
+
+
+    function foo({name:a,age:b,school:c="linda"}) {
+        console.log(a,b,c);
+    }
+    var obj = {
+        name:"aaa",
+        age:"bbb",
+        school:"ccc",
+    }
+    foo(obj);
+
+    function foo() {
+        let arr = ["1","2","3"];
+        return arr;
+    }
+    var [a,b,c] = foo();
+    console.log(a,b,c);
+
+    let a = 10;
+    let b = 1;
+//存入数组
+    var [a,b] = [b,a];
+    a=[b,b=a][0];
+
+    console.log(a,b);
+</script>
+</body>
+</html>
